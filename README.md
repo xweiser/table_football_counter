@@ -34,22 +34,21 @@ all contributors should join here: https://discord.gg/77jfMQfU
 	1) Show in alphanummeric numbers the amount of goals achieved by each team
 	2) Play a sound once one team has achieved the required goals (5,6 or 10)
 	3) Indicate on the display that the maximum required goals ((5,6 or 10) have been achieved.
-  4) ndicate with an RBG light that the maximum required goals ((5,6 or 10) have been achieved.
-	5) tbd
+  	4) Indicate with an RBG light that the maximum required goals ((5,6 or 10) have been achieved.
+	5) Enable to manually add or substract a goal
+	6) tbd
 	
 	
 
 Nice to have or Future Requirement : Add a OBDII Adapter to the car and read motor values, speed, etc
 
 ## Non Functional Requirements
-	1) The system shall indicate if connected to the cloud services
-	2) The system shall enable debugging (Add display?)
-	3) Test the power-loss function
+	1) The system shall enable testing the motion sensors
+	2) The system shall enable debugging (show errors in case sensors are not connected)
+	3) Test the RGB lighting
 	4) Test the alarming of the system
-	5) Create an error and event Log- that can be analyzed later on
-	6) The pcb board must have electrical contact pads to enable connecting measruement devices such as an oszilloscope for error detection (dont know the right wording)
-	7) The board reset function needs to be accessible to the user (to reboot the board)
-	8) In observation mode (no person in the campingcar) the display shall be deactived to save battery power (in case of main power loss) the system shall communicate to the cloud as long as possible 
+	5) (Create an error and event Log- that can be analyzed later on)
+	6) The board reset function needs to be accessible to the user (to reboot the board)
 	
 	
 	
@@ -57,10 +56,7 @@ Nice to have or Future Requirement : Add a OBDII Adapter to the car and read mot
 
 
 ## MVP - Minimal viable Product
-In general a MVP describes a Solution which offers a minimal acceptable value for the user. In this case the Function: Alarm the user when the power is cut and the interior temperature falls below 5 degree, is defined as MVP. Thus the User can takes action and inform the Parkinglot owner to repair the power supply.
-The satellite boxes can be added in a later stage.
+In general a MVP describes a Solution which offers a minimal acceptable value for the user. In this case the Function: 
 
 ### Requirements for the MVP
-1) Measure the interior temperature & humidity
-2) Measure the outside temperature
-3) Alarm when power loss and temperature below 5*C using IFTT
+1)
